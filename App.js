@@ -5,6 +5,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Login from "./src/telas/Login";
 import Home from "./src/telas/Home";
 import Reservar from "./src/telas/Reservar";
+import ConfirmarReserva from "./src/telas/Reservar/confirmacao";
+import PagamentoPixReserva from "./src/telas/Reservar/pagamentopix";
 import MinhasReservas from "./src/telas/MinhasReservas";
 
 import ComprarCreditos from "./src/telas/ComprarCreditos";
@@ -33,6 +35,8 @@ export default function App() {
 
         {/* Telas principais */}
         <Stack.Screen name="Reservar" component={Reservar} />
+        <Stack.Screen name="ConfirmarReserva" component={ConfirmarReserva} />
+        <Stack.Screen name="PagamentoPixReserva" component={PagamentoPixReserva} />
         <Stack.Screen name="MinhasReservas" component={MinhasReservas} />
 
         {/* Créditos */}

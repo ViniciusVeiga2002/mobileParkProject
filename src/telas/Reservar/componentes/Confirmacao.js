@@ -28,7 +28,7 @@ export default function DetalhesReservaPagamento({ navigation, route }) {
     
     // Se for PIX, navega para a tela de geração do código.
     if (formaPagamento === 'Pix') {
-        navigation.navigate('PagamentoPix', {
+        navigation.navigate('PagamentoPixReserva', {
             preco: preco,
             reservaDetalhes: { veiculo, dataHora, estacionamento }
         });
